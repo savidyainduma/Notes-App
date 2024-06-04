@@ -33,7 +33,7 @@ import { SiG2 } from 'react-icons/si'
           filteredNotes.map(note => <NoteItem key={note.id} note={note} />)
         }
         </div>
-        <Link to={'/create-note'} className='btn add__btn'><BsPlusLg/></Link>
+        <Link to={'/create-note'} className='add__btn'><BsPlusLg/></Link>
      </section>
    )
  }
