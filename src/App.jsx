@@ -10,8 +10,8 @@ const App = () => {
   const [notes, setNotes] = useState([])
   
   useEffect(() => {
-    
-  })
+    localStorage.setItem('notes', JSON.stringify(notes))
+  }, [notes])
 
   return (
     <main id="app">
@@ -19,7 +19,7 @@ const App = () => {
         <Routes>
             <Route path="/" element={<Notes notes={notes}/>} />
             <Route path="/create-note" element={<CreateNote setNotes={setNotes} />} />
-            <Route path="/edit-note" element={<EditNote/>} />
+            <Route path="/edit-note/:id" element={<EditNote notes={notes} setNotes={setNotes}/>} />
         </Routes>
     </BrowserRouter>
     </main>

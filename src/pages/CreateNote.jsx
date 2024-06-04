@@ -25,7 +25,7 @@ const CreateNote = ({setNotes}) => {
   }
 
   return (
-    <secton>
+    <section>
       <header className='create-note__header'>
         <Link to="/" className='btn'><IoIosArrowBack/></Link>
         <button className='btn lg primary' onClick={handleSubmit}>Save</button>
@@ -34,7 +34,7 @@ const CreateNote = ({setNotes}) => {
         <input type='text' placeholder='Title' value={title} onChange={(e) => setTitle(e.target.value)} autoFocus />
         <textarea rows="28" placeholder='Note details...' value={details} onChange={(e) => setDetails(e.target.value)}></textarea>
       </form>
-    </secton>
+    </section>
   )
 }
 
