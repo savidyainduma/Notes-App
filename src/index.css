@@ -62,8 +62,8 @@ body {
 
 #app {
     background: var(--color-bg-black);
-    height: 48rem;
-    width: 24rem;
+    height: 768px;
+    width: 1366px;
     padding: 2rem 1.6rem;
     overflow-y: scroll;
     position: relative;
@@ -155,8 +155,8 @@ h2 {
 
 .add__btn {
     position: fixed;
-    bottom: 5rem;
-    right: 33rem;
+    bottom: 4rem;
+    right: 4rem;
     padding: 1rem;
 }
 
